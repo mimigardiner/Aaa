@@ -1,0 +1,165 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0a19;
+  color: #f4effa;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #2b1055, #753a88, #d96b98);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 3px solid #f7a8b8;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
+  color: #ffe6f0;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #1b112c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+  color: #f4effa;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #d96b98;
+  color: #0f0a19;
+}
+
+/* Contenido principal */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  color: #f7a8b8;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #d96b98;
+  padding-left: 0.8rem;
+}
+
+/* Sección destacada de portada (index.html) */
+.portada {
+  background: linear-gradient(rgba(27, 17, 44, 0.85), rgba(43, 16, 85, 0.9));
+  border: 1px solid #753a88;
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.portada h2 {
+  border: none;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.portada a {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background-color: #f7a8b8;
+  color: #1b112c;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.portada a:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Tarjetas (articles) */
+article {
+  background-color: #1b112c;
+  border: 1px solid #352154;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+article h3 {
+  color: #e5989b;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+article p {
+  margin-bottom: 0.8rem;
+}
+
+/* Imágenes */
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #753a88;
+}
+
+/* Listas (concierto.html y canciones.html) */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* Pie de página */
+footer {
+  background-color: #150c24;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #352154;
+  color: #b8a9c9;
+  font-size: 0.9rem;
+}
